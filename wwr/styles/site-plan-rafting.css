@@ -5,7 +5,7 @@
     --primary-color: #031624;
     --secondary-color: #c6e74f;
     --accent1-color: #27ec0d;
-    --accent2_color: #381d2a;
+    --accent2-color: #381d2a;
 
     --heading-font: 'DM Serif Display';
     --paragraph-font: 'Playpen Sans';
@@ -13,7 +13,7 @@
     --nav-background-color: #20b2cc;
     --nav-link-color: #340670;
     --nav-hover-link-color: #90b6a1;
-    --nav_hover-background-color: #174fa3;
+    --nav-hover-background-color: #174fa3;
 }
 body {
     font-family: var(--paragraph-font);
@@ -53,5 +53,5 @@ nav a:link, nav a:visited {
 
 nav a:hover {
     color: var(--nav-hover-link-color);
-    background-color: var(--nav_hover-background-color);
+    background-color: var(--nav-hover-background-color);
 }
