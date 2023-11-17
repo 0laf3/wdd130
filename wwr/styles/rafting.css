@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Playpen+Sans&family=Tomorrow:ital,wght@1,300&display=swap');
+:root {
+    --primary-color: #031624;
+    --secondary-color: #c6e74f;
+    --accent1-color: #27ec0d;
+    --accent2-color: #381d2a;
+
+    --heading-font: 'DM Serif Display';
+    --paragraph-font: 'Playpen Sans';
+
+    --nav-background-color: #20b2cc;
+    --nav-link-color: #340670;
+    --nav-hover-link-color: #90b6a1;
+    --nav-hover-background-color: #174fa3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    position: absolute;
+    top: 1rem;
+    color: var(--accent1-color);
+    padding: 400px;
+    font-family: var(--heading-font);
+    
+}
+article {
+    position:absolute;
+    margin: 20rem;
+    height: auto;
+    border: 1px;
+    top: 15rem;
+    padding: 2px;
+    box-shadow: 0 0 30px;
+    color: rgb(0, 162, 255);
+}
+article img{
+    float: right;
+    width: 250px;
+}
+p {
+    margin: 2rem;
+    font-family: var(--paragraph-font);
+}
+
+h2 {
+    margin: 2rem;
+    font-family: var(--heading-font);
+}
+nav {
+    margin: 1rem;
+}
+/* Class Selectors */
+
+.hero img {
+    margin: 1rem;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.mg {
+    margin: 2rem;
+}
