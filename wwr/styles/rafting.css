@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Playpen+Sans&family=Tomorrow:ital,wght@1,300&display=swap');
 :root {
-    --primary-color: #031624;
-    --secondary-color: #c6e74f;
-    --accent1-color: #27ec0d;
-    --accent2-color: #381d2a;
+    --primary-color: #B6FFFA;
+    --secondary-color: #98E4FF;
+    --accent1-color: #80B3FF;
+    --accent2-color: #687EFF;
 
     --heading-font: 'DM Serif Display';
     --paragraph-font: 'Playpen Sans';
@@ -19,20 +19,58 @@
     box-sizing: border-box;
 }
 
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+.logo {
+    max-width: 10%;
+    height: auto;
+    justify-content: right;
+}
+
+.navegador nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navegador nav a:hover {
+    background-color: #555;
+}
+
+/* Main content styles */
+body {
+    background-color: var(--primary-color);
+    line-height: 1.6;
+}
 h1 {
-    position: absolute;
-    top: 1rem;
+    position:absolute;
+    top: 10rem;
+    right: 40%;
     color: var(--accent1-color);
-    padding: 400px;
+    padding: 100px;
     font-family: var(--heading-font);
-    
+    text-align: center; 
 }
 article {
     position:absolute;
     margin: 20rem;
     height: auto;
     border: 1px;
-    top: 15rem;
+    top: 4rem;
     padding: 2px;
     box-shadow: 0 0 30px;
     color: rgb(0, 162, 255);
@@ -42,18 +80,29 @@ article img{
     width: 250px;
 }
 p {
+    text-align: justify;
     margin: 2rem;
     font-family: var(--paragraph-font);
 }
-
 h2 {
     margin: 2rem;
     font-family: var(--heading-font);
+    text-align: center;
 }
-nav {
-    margin: 1rem;
+
+section >div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 20px;
 }
-/* Class Selectors */
+
+/* Container to center content on the page */
+.grid{
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: auto;
+}
 
 .hero img {
     margin: 1rem;
@@ -61,7 +110,28 @@ nav {
     width: 100%;
     height: auto;
 }
-
-.mg {
-    margin: 2rem;
+section > p .nightriver{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+footer nav img{
+    width: 50px;
+}
+.sociallinks a {
+    margin: 0 10px;
+    justify-content: left;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr  ;
+    }
 }
