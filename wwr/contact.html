@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="João Sebastião Capindissa BYU-Idaho WDD 130 contact us page">
+    <meta name="author" content="João Sebastião Capindissa">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+
+    <header class="grid">
+    <img class="logo" src="images/wwrlogo.png" alt="Rafting Site Logo">
+    <div class="navegador">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contacts Us</a>
+        </nav>
+    </div>
+</header>
+
+    <section class="section grid2">
+        <div class="contact">
+            <h2>Contact Information</h2>
+
+            <p><strong>Address:</strong> 123 Main Street, Cityville, State, Country, ZIP</p>
+            <p><strong>Phone:</strong> +244 930402484</p>
+            <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafiting.com">info@whitewaterrafiting.com</a></p>
+
+            <h2>Our Location</h2>
+            <p>Visit us at our office. Here's a map to help you find us:</p>
+
+            <!-- small embedded google map -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-71.12345678901234!3d42.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM0MyMDAuMSA0NDEuMSJTIDcwwrA1MzguMSJF!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                allowfullscreen=""
+                loading="lazy"
+            ></iframe>
+        </div>
+        
+        <div class="form">
+            <form action="#" method="post">
+                <h3>Contact Form</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Purpose of Message:</label>
+                <input type="radio" id="general" name="purpose" value="General Inquiry" checked>
+                <label for="general">General Inquiry</label>
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                <label for="reservation">Reservation Question</label>
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                <label for="suggestion">Website Suggestion</label>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>    
+    </section>
+    <footer class="grid">
+        <p>©️2023 | White Water Rafting | João Sebastião Capindissa</p>
+        <nav class="sociallinks ">
+            <a href="https://web.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter"></a>
+            <a href="https://www.instagram.com/"><img src="images/inst.png" alt="Instagram"></a>
+        </nav>
+    </footer>
+
+</body>
+</html>
