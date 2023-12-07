@@ -102,7 +102,7 @@ section >div {
 }
 
 form {
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
     background-color: #f4f4f4;
     padding: 20px;
@@ -148,6 +148,15 @@ input[type="submit"]:hover {
 }
 .contact{
     display: block;
+}
+section div .info{
+    position: initial;
+    top: 0rem;
+    right: 0%;
+    color: var(--accent1-color);
+    padding: 40px;
+    text-align: left;
+    justify-self: left;
 }
 .form{
     display: flex;
