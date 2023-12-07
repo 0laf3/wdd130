@@ -162,8 +162,7 @@ section div .info{
     display: flex;
 }
 img{
-    display: block;
-    float: right;
+    display: inline-block;
     width: 350px;
 }
 
