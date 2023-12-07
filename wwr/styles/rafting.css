@@ -143,7 +143,7 @@ input[type="submit"]:hover {
 .grid2{
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: max-content;
 }
 .contact{
@@ -161,6 +161,12 @@ section div .info{
 .form{
     display: flex;
 }
+img{
+    display: block;
+    float: right;
+    width: 350px;
+}
+
 /* Container to center content on the page */
 .grid{
     display: grid;
