@@ -161,7 +161,7 @@ section div .info{
 .form{
     display: flex;
 }
-img{
+.contact-image{
     display: inline-block;
     width: 350px;
 }
