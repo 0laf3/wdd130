@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Playpen+Sans&family=Tomorrow:ital,wght@1,300&display=swap');
 :root {
     --primary-color: #eaf6fe;
-    --secondary-color: #66bfbf;
+    --secondary-color: #3b7272;
     --accent1-color: #40514e;
     --accent2-color: #687EFF;
 
@@ -21,7 +21,7 @@
 
 /* Header styles */
 header {
-    background-color: #66bfbf;
+    background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -119,11 +119,12 @@ section >div {
     -moz-border-radius: 8;
     border-radius: 8px;
     font-family: var(--paragraph-font);
-    color: #ffffff;
+    color: var(--accent1-color);
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     cursor: pointer;
+    border: none;
   }
   
   .btn:hover {
@@ -173,14 +174,14 @@ input[type="checkbox"] {
 input[type="button"] {
     position: relative;
     left: 0%;
-    top: 10px;
-    color: #fff;
-    margin:0 ;
-    border-radius: 4px;
-   
+    bottom: 10px;
+    
+    
 }
 
-
+input[type="button"]:hover {
+    background-color: #45a049;
+}
 .grid2{
     display: grid;
     grid-template-rows: auto auto;
@@ -232,7 +233,7 @@ section > p .nightriver{
 }
 /* Footer styles */
 footer {
-    background-color: #66bfbf;
+    background-color: #333;
     color: #fff;
     text-align: center;
 }
