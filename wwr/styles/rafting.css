@@ -136,8 +136,29 @@ section >div {
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
   }
-/* About page*/
+/* home page*/
+.homepagediv{
+    padding: 20px;
+    width: 100%;
+    height: 250px;
+}
+.homepagediv img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.homepagediv h1{
+    left: 30%;
+}
+.homepagegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1f;
+}
 
+.gridrown{
+    background-color: #340670;
+}
 /* Conatct as Page */
 
 .section {
@@ -171,12 +192,10 @@ input[type="checkbox"] {
     margin-top: 5px;
 }
 
-input[type="button"] {
+input[type="submit"] {
     position: relative;
     left: 0%;
-    bottom: 10px;
-    
-    
+    bottom: 0px;
 }
 
 input[type="button"]:hover {
