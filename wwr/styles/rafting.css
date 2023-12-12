@@ -119,7 +119,7 @@ section >div {
     -moz-border-radius: 8;
     border-radius: 8px;
     font-family: var(--paragraph-font);
-    color: var(--accent1-color);
+    color: black;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
@@ -136,29 +136,7 @@ section >div {
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
   }
-/* home page*/
-.homepagediv{
-    padding: 20px;
-    width: 100%;
-    height: 250px;
-}
-.homepagediv img{
-    position: relative;
-    width: 100%;
-    height: 200px;
-}
-.homepagediv h1{
-    left: 30%;
-}
-.homepagegrid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1f;
-}
 
-.gridrown{
-    background-color: #340670;
-}
 /* Conatct as Page */
 
 .section {
@@ -307,6 +285,39 @@ h1{
 }
 .tripp{
     text-align: center;
+}
+/* home page*/
+.homepagediv{
+    padding: 20px;
+    width: 100%;
+    height: 250px;
+}
+.homepagediv img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.homepagediv h1{
+    left: 30%;
+}
+.homepagegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.planegif{
+    align-items: center;
+}
+.promotions{
+    display: flex;
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+.imgpromotion{
+    top: 10px;
+    bottom: 30px;
 }
 /* Responsive styles */
 @media (max-width: 768px) {
