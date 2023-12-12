@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Playpen+Sans&family=Tomorrow:ital,wght@1,300&display=swap');
 :root {
-    --primary-color: #B6FFFA;
-    --secondary-color: #98E4FF;
-    --accent1-color: #80B3FF;
+    --primary-color: #eaf6fe;
+    --secondary-color: #66bfbf;
+    --accent1-color: #40514e;
     --accent2-color: #687EFF;
 
     --heading-font: 'DM Serif Display';
@@ -21,7 +21,7 @@
 
 /* Header styles */
 header {
-    background-color: #333;
+    background-color: #66bfbf;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -54,16 +54,21 @@ nav {
 /* Main content styles */
 body {
     background-color: var(--primary-color);
-    line-height: 1.6;
+    line-height: 2;
+    color: var(--accent1-color);
+    
 }
 h1 {
     position:absolute;
     top: 10rem;
-    right: 40%;
-    color: var(--accent1-color);
+    left: 30%;
+    margin: 50px auto 0 auto;
+    color: var(--secondary-color);
     padding: 100px;
     font-family: var(--heading-font);
     text-align: center; 
+    font-size: 300%;
+    line-height: 2;
 }
 article {
     position:absolute;
@@ -85,9 +90,17 @@ p {
     font-family: var(--paragraph-font);
 }
 h2 {
+    color: var(--secondary-color);
     margin: 2rem;
     font-family: var(--heading-font);
     text-align: center;
+    font-size: 200%;
+    font-weight: normal;
+}
+h3{
+    color: var(--secondary-color);
+    margin: 1rem;
+    font-family: var(--heading-font);
 }
 
 section >div {
@@ -95,6 +108,35 @@ section >div {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 20px;
 }
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: var(--paragraph-font);
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
+/* About page*/
+
 /* Conatct as Page */
 
 .section {
@@ -129,17 +171,16 @@ input[type="checkbox"] {
 }
 
 input[type="button"] {
-    background-color: #4caf50;
+    position: relative;
+    left: 0%;
+    top: 10px;
     color: #fff;
-    padding: 10px;
-    border: none;
+    margin:0 ;
     border-radius: 4px;
-    cursor: pointer;
+   
 }
 
-input[type="button"]:hover {
-    background-color: #45a049;
-}
+
 .grid2{
     display: grid;
     grid-template-rows: auto auto;
@@ -153,7 +194,7 @@ section div .info{
     position: initial;
     top: 0rem;
     right: 0%;
-    color: var(--accent1-color);
+    color: var(--secondary-color);
     padding: 40px;
     text-align: left;
     justify-self: left;
@@ -175,10 +216,13 @@ section div .info{
 }
 
 .hero img {
-    margin: 1rem;
     display: block;
     width: 100%;
     height: auto;
+    width: 100%;
+    height: 20%;
+    margin: 0 10px;
+    padding: 25px;
 }
 section > p .nightriver{
     display: block;
@@ -188,7 +232,7 @@ section > p .nightriver{
 }
 /* Footer styles */
 footer {
-    background-color: #333;
+    background-color: #66bfbf;
     color: #fff;
     text-align: center;
 }
@@ -198,6 +242,51 @@ footer nav img{
 .sociallinks a {
     margin: 0 10px;
     justify-content: left;
+}
+/*Book a trip page*/
+.imagetrip{
+    width: 100%;
+    height: 20%;
+    margin: 10px;
+    padding: 20px 30px;
+}
+hr{
+    position: relative;
+    margin: auto ;
+    border-style: none;
+    border-top-style: dotted;
+    border-color: gray;
+    border-width: 5px;
+    width: 10%;
+}
+.imagetrips{
+    display: flex;
+    margin: 0 10px;
+    padding: 10px;
+}
+.imgday{
+    margin-bottom: 20px;
+}
+h3{
+    text-align: center;
+}
+.btn{
+    position: relative;
+    left: 45%;
+    padding:10px;
+    bottom: 20px;
+}
+h1{
+    position:absolute;
+    left: 40%;
+}
+.triptext{
+    position: relative;
+    width: 60%;
+    margin: auto;
+}
+.tripp{
+    text-align: center;
 }
 /* Responsive styles */
 @media (max-width: 768px) {
