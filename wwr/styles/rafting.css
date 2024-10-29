@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Playpen+Sans&family=Tomorrow:ital,wght@1,300&display=swap');
-
 :root {
     --primary-color: #eaf6fe;
     --secondary-color: #3b7272;
     --accent1-color: #40514e;
     --accent2-color: #687EFF;
-    --heading-font: 'DM Serif Display', serif;
-    --paragraph-font: 'Playpen Sans', sans-serif;
+
+    --heading-font: 'DM Serif Display';
+    --paragraph-font: 'Playpen Sans';
+
     --nav-background-color: #20b2cc;
     --nav-link-color: #340670;
     --nav-hover-link-color: #90b6a1;
     --nav-hover-background-color: #174fa3;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -21,23 +21,24 @@
 
 /* Header styles */
 header {
-    background-color: var(--nav-background-color);
+    background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
-
 nav {
+    padding: 1rem;
     display: flex;
+    align-items: center;
     justify-content: center;
-}
-
+}   
 .logo {
     max-width: 10%;
     height: auto;
+    justify-content: right;
 }
 
-nav a {
+.navegador nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 20px;
@@ -45,89 +46,113 @@ nav a {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
+.footerlink{
+    color: #fff;
+    text-decoration: none;
+}
 
-nav a:hover {
+.footerlink:hover{
+    background-color: #555;
+}
+.navegador nav a:hover {
     background-color: #555;
 }
 
 /* Main content styles */
 body {
     background-color: var(--primary-color);
-    line-height: 1.6;
+    line-height: 2;
     color: var(--accent1-color);
+    
+}
+h1 {
+    position:absolute;
+    top: 10rem;
+    left: 30%;
+    margin: 50px auto 0 auto;
+    color: var(--secondary-color);
+    padding: 100px;
+    font-family: var(--heading-font);
+    text-align: center; 
+    font-size: 300%;
+    line-height: 2;
+}
+article {
+    position:absolute;
+    margin: 20rem;
+    height: auto;
+    border: 1px;
+    top: 4rem;
+    padding: 2px;
+    box-shadow: 0 0 30px;
+    color: rgb(0, 162, 255);
+}
+article img{
+    float: right;
+    width: 250px;
+}
+p {
+    text-align: justify;
+    margin: 2rem;
     font-family: var(--paragraph-font);
 }
-
-h1 {
-    text-align: center;
-    color: var(--secondary-color);
-    font-size: 3rem;
-    margin: 50px 0;
-}
-
-.homepagediv {
-    padding: 20px;
-    width: 100%;
-    height: 250px;
-}
-
-.homepagediv img {
-    width: 100%;
-    height: auto;
-}
-
-.homepagegrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
 h2 {
     color: var(--secondary-color);
-    margin: 20px 0;
+    margin: 2rem;
+    font-family: var(--heading-font);
     text-align: center;
-    font-size: 2rem;
+    font-size: 200%;
+    font-weight: normal;
 }
-
-h3 {
+h3{
     color: var(--secondary-color);
-    margin: 1rem 0;
-    text-align: center;
+    margin: 1rem;
+    font-family: var(--heading-font);
 }
 
-.promotions {
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-    margin: 20px auto;
+section >div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 20px;
 }
-
-.imgpromotion {
-    width: 100%;
-    height: auto;
-}
-
-/* Button styles */
 .btn {
-    background: linear-gradient(to bottom, #11cdd4, #11999e);
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
     border-radius: 8px;
+    font-family: var(--paragraph-font);
     color: black;
-    font-size: 1rem;
-    padding: 10px 20px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
     text-decoration: none;
     cursor: pointer;
     border: none;
-    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
+
+/* Conatct as Page */
+
+.section {
+    padding: 20px;
 }
 
-.btn:hover {
-    background: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-}
-
-/* Form styles */
 form {
-    max-width: 400px;
-    margin: 20px auto;
+    max-width: 100%;
+    margin: 0 auto;
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
@@ -143,12 +168,167 @@ input, textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
+    box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-input[type="submit"] {
-    cursor: pointer;
+input[type="checkbox"] {
+    margin-top: 5px;
 }
 
+input[type="submit"] {
+    position: relative;
+    left: 0%;
+    bottom: 0px;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
+.grid2{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: max-content;
+}
+.contact{
+    display: block;
+}
+section div .info{
+    position: initial;
+    top: 0rem;
+    right: 0%;
+    color: var(--secondary-color);
+    padding: 40px;
+    text-align: left;
+    justify-self: left;
+}
+.form{
+    display: flex;
+}
+.contact-image{
+    display: inline-block;
+    width: 350px;
+}
+
+/* Container to center content on the page */
+.grid{
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: auto;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    width: 100%;
+    height: 20%;
+    margin: 0 10px;
+    padding: 25px;
+}
+section > p .nightriver{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
 /* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+footer nav img{
+    width: 50px;
+}
+.sociallinks a {
+    margin: 0 10px;
+    justify-content: left;
+}
+/*Book a trip page*/
+.imagetrip{
+    width: 100%;
+    height: 20%;
+    margin: 10px;
+    padding: 20px 30px;
+}
+hr{
+    position: relative;
+    margin: auto ;
+    border-style: none;
+    border-top-style: dotted;
+    border-color: gray;
+    border-width: 5px;
+    width: 10%;
+}
+.imagetrips{
+    display: flex;
+    margin: 0 10px;
+    padding: 10px;
+}
+.imgday{
+    margin-bottom: 20px;
+}
+h3{
+    text-align: center;
+}
+.btn{
+    position: relative;
+    left: 45%;
+    padding:10px;
+    bottom: 20px;
+}
+h1{
+    position:absolute;
+    left: 40%;
+}
+.triptext{
+    position: relative;
+    width: 60%;
+    margin: auto;
+}
+.tripp{
+    text-align: center;
+}
+/* home page*/
+.homepagediv{
+    padding: 20px;
+    width: 100%;
+    height: 250px;
+}
+.homepagediv img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+.homepagediv h1{
+    left: 30%;
+}
+.homepagegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.planegif{
+    align-items: center;
+}
+.promotions{
+    display: flex;
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+.imgpromotion{
+    top: 10px;
+    bottom: 30px;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr  ;
+    }
+}
