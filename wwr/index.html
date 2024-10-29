@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | White Water Rafting </title>
+    <title>Home | White Water Rafting</title>
     <meta name="description" content="João Sebastião Capindissa BYU-Idaho WDD 130 Home page">
     <meta name="author" content="João Sebastião Capindissa">
     <link rel="stylesheet" href="styles/rafting.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
+
 <body>
     <header class="grid">
-        <img class="logo" src="images/wwrlogo.png" alt="Rafting Site Logo">
-        <div class="navegador">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contacts Us</a>
-            </nav>
-        </div>
+        <img class="logo" src="images/wwrlogo.png" alt="White Water Rafting Logo">
+        <nav class="navegador">
+            <ul>
+                <li><a href="index.html" aria-label="Home">Home</a></li>
+                <li><a href="about.html" aria-label="About Us">About Us</a></li>
+                <li><a href="trips.html" aria-label="Trips">Trips</a></li>
+                <li><a href="contact.html" aria-label="Contact Us">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <div class="homepagediv">
-            <img class="homepageimg" src="images/homepage.jpg" alt="rafting">
-            <h1>Welcame to White Water Rafiting</h1>
-        </div>
-        <div class="homepagegrid">
+        <section class="homepagediv">
+            <img class="homepageimg" src="images/homepage.jpg" alt="Rafting Adventure">
+            <h1>Welcome to White Water Rafting</h1>
+        </section>
+
+        <section class="homepagegrid">
             <div class="form">
                 <form action="your_server_script.php" method="post">
                     <h3>Subscribe to Our Newsletter</h3>
@@ -34,35 +38,35 @@
                     <input type="text" id="name" name="name" required>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Your email.." required>
-                    <input class="btn" type="submit" value="signup button">
+                    <input class="btn" type="submit" value="Sign Up">
                 </form>
-            </div> 
-            <div>
-                <a href="trips.html"><img class="planegif" src="images/plane.gif" alt=" palne"></a>
             </div>
-        </div>
-        
-        <h2>Take Advantage of our Current Offers & Promotions!</h2>
-        <div class="promotions">
+            <div>
+                <a href="trips.html"><img class="planegif" src="images/plane.gif" alt="Plane Animation"></a>
+            </div>
+        </section>
+
+        <h2>Take Advantage of Our Current Offers & Promotions!</h2>
+        <section class="promotions">
             <div>
                 <h3>3 DAY RAFT TRIP</h3>
-                <img class="imgpromotion" src="images/rafting4_600.jpg" alt="rafting53_600">
+                <img class="imgpromotion" src="images/rafting4_600.jpg" alt="3 Day Raft Trip">
                 <button class="btn">DETAILS</button>
             </div>
             <div>
                 <h3>4 OR 5 DAY RAFT TRIP</h3>
-                <img class="imgpromotion" src="images/rafting6_600.jpg" alt="rafting26_600">
+                <img class="imgpromotion" src="images/rafting6_600.jpg" alt="4 or 5 Day Raft Trip">
                 <button class="btn">DETAILS</button>
             </div>
-        </div>
+        </section>
     </main>
+
     <footer class="grid">
         <p>©️2023 | White Water Rafting | João Sebastião Capindissa</p>
-        
-        <nav class="sociallinks ">
+        <nav class="sociallinks">
             <a class="footerlink" href="https://app.moqups.com/EEL5XkefbvOrUgd3eVpUxDmwN4y2vXzD/view/page/ad64222d5">Site Plan</a>
-            <a href="https://web.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter"></a>
+            <a href="https://web.facebook.com/" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
             <a href="https://www.instagram.com/"><img src="images/inst.png" alt="Instagram"></a>
         </nav>
     </footer>
